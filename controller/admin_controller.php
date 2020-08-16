@@ -218,7 +218,7 @@ class admin_controller
 								{
 									$user_add_ary[] = $user_data['user_id'];
 								}
-								elseif (!group_memberships($this->config['lg_exclude_group'], $user_data['user_id'], true))
+								else if (!group_memberships($this->config['lg_exclude_group'], $user_data['user_id'], true))
 								{
 									$user_add_ary[] = $user_data['user_id'];
 								}

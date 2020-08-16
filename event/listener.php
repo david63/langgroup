@@ -54,7 +54,7 @@ class listener implements EventSubscriberInterface
 
 	public function user_reg($event)
 	{
-		$this->main_controller->lang_group($event, true);;
+		$this->main_controller->lang_group($event, true);
 	}
 
 	/**

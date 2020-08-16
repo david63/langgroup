@@ -1,0 +1,54 @@
+{% include '@' ~ NAMESPACE ~ '/head_panel.html' %}
+
+{% if PHP_VALID and PHPBB_VALID %}
+
+<form id="acp_r2t" method="post" action="{{ U_ACTION }}">
+
+
+    <fieldset>
+		<legend>{{ lang('OPTIONS') }}</legend>
+
+		<dl>
+			<dt><label for="lg_exclude_group_enable">{{ lang('EXCLUDE_ENABLE') }}{{ lang('COLON') }}</label><br><span>{{ lang('EXCLUDE_ENABLE_EXPLAIN') }}</span></dt>
+			<dd>
+				<input type="radio" id="lg_exclude_group_enable1" name="lg_exclude_group_enable" value="1"{% if EXCLUDE_ENABLE %} checked="checked"{% endif %} />
+				<label class="set" for="lg_exclude_group_enable1">{{ lang('YES') }}</label>
+				<input type="radio" id="lg_exclude_group_enable0" name="lg_exclude_group_enable" value="0"{% if not EXCLUDE_ENABLE %} checked="checked"{% endif %} />
+				<label class="unset" for="lg_exclude_group_enable0">{{ lang('NO') }}</label>
+			</dd>
+		</dl>
+
+		<dl>
+	    	<dt><label for="lg_exclude_group">{{ lang('EXCLUDE_GROUP') }}{{ lang('COLON') }}</label><br><span>{{ lang('EXCLUDE_GROUP_EXPLAIN') }}</span></dt>
+			<dd>
+				<select name="lg_exclude_group" id="lg_exclude_group">{{ EXCLUDE_GROUP }}</select>
+	    	</dd>
+		</dl>
+    </fieldset>
+
+	<fieldset>
+		<legend>{{ lang('ACP_SUBMIT_CHANGES') }}</legend>
+		<p class="submit-buttons">
+			<input class="adm-button" type="submit" id="submit" name="submit" value="{{ lang('SUBMIT') }}" />&nbsp;
+			<input class="adm-button" type="reset" id="reset" name="reset" value="{{ lang('RESET') }}" />
+		</p>
+		{{ S_FORM_TOKEN }}
+	</fieldset>
+
+
+
+	<fieldset>
+		<legend>{{ lang('SYNCHRONISE') }}</legend>
+		<p>{{ lang('SYNC_EXPLAIN') }}</p>
+		<p class="submit-buttons">
+			<input class="adm-button" type="submit" id="sync" name="sync" value="{{ lang('SYNC') }}" />
+		</p>
+		{{ S_FORM_TOKEN }}
+	</fieldset>
+
+
+</form>
+
+{% include '@' ~ NAMESPACE ~ '/donate.html' %}
+
+{% endif %}

@@ -2,11 +2,13 @@
 
 An extension to automatically move a user to a group based on their language choice.
 
-[![Build Status](https://travis-ci.com/david63/langgroup.svg?branch=master)](https://travis-ci.com/david63/langgroup)
+[![Build Status](https://github.com/david63/langgroup/workflows/Tests/badge.svg)](https://github.com/phpbb-extensions/david63/langgroup)
 [![License](https://poser.pugx.org/david63/langgroup/license)](https://packagist.org/packages/david63/langgroup)
 [![Latest Stable Version](https://poser.pugx.org/david63/langgroup/v/stable)](https://packagist.org/packages/david63/langgroup)
 [![Latest Unstable Version](https://poser.pugx.org/david63/langgroup/v/unstable)](https://packagist.org/packages/david63/langgroup)
 [![Total Downloads](https://poser.pugx.org/david63/langgroup/downloads)](https://packagist.org/packages/david63/langgroup)
+[![codecov](https://codecov.io/gh/david63/langgroup/branch/master/graph/badge.svg?token=D2500PgRex)](https://codecov.io/gh/david63/langgroup)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/59902be2665c476dbd7951858c9ff769)](https://www.codacy.com/manual/david63/langgroup?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=david63/langgroup&amp;utm_campaign=Badge_Grade)
 
 ## Minimum Requirements
   * phpBB 3.3.0

@@ -14,7 +14,6 @@ namespace david63\langgroup\event;
 */
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 
-
 use david63\langgroup\controller\main_controller;
 
 /**
@@ -52,6 +51,13 @@ class listener implements EventSubscriberInterface
 		);
 	}
 
+	/**
+	* Process the user registration data
+	*
+	* @param object $event The event object
+	* @return null
+	* @access public
+	*/
 	public function user_reg($event)
 	{
 		$this->main_controller->lang_group($event, true);

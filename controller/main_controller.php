@@ -38,7 +38,7 @@ class main_controller
 	protected $php_ext;
 
 	/**
-	* Constructor for admin controller
+	* Constructor for main controller
 	*
 	* @param \phpbb\config\config			$config			Config object
 	* @param \phpbb\user					$user			User object
@@ -61,7 +61,7 @@ class main_controller
 	}
 
 	/**
-	* Display the options a user can configure for this extension
+	* Process the change of language groups
 	*
 	* @return null
 	* @access public

@@ -1,3 +1,6 @@
+imports:
+    - { resource: alias.yml }
+
 services:
     _defaults:
         autowire: true
@@ -6,6 +9,7 @@ services:
             $php_ext: '%core.php_ext%'
             $tables: '%tables%'
             $ext_images_path: '%core.root_path%ext/david63/langgroup/adm/style/images'
+        public: true			
 
     david63.langgroup.listener:
         class: david63\langgroup\event\listener
